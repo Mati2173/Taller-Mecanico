@@ -23,7 +23,9 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-PROJECT_APPS = []
+PROJECT_APPS = [
+    'apps.car_servicing' # Car Servicing App
+]
 
 THIRD_PARTY_APPS = [
     'rest_framework',  # Django REST Framework
