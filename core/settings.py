@@ -101,7 +101,7 @@ USE_TZ = True
 
 # Static Files Configuration
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'dist']
+STATICFILES_DIRS = [BASE_DIR / 'client' / 'dist']
 STATIC_ROOT = BASE_DIR / 'static/'
 
 # Default Primary Key Field Type

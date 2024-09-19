@@ -24,7 +24,7 @@ const config = {
 export async function getAllVehicles(filter = {}) {
     let URL = `${API_URL}/vehicles/`;
     
-    if (filter) {
+    if (Object.keys(filter).length > 0) {
         const urlParam = new URLSearchParams(filter).toString();
         URL += `search/?${urlParam}`;
     }
