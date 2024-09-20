@@ -35,3 +35,11 @@ export function formatStringDate(dateString) {
 
     return `${formatedYear}-${formatedMonth}-${formatedDay}`;
 }
+
+export function formatVehicleInfo(brand, model, year) {
+    if (!brand && !model && !year) return 'Sin información';
+
+    const infoArray = [brand || 'N/A', model || 'N/A', year || 'N/A'];
+
+    return infoArray.join(' - ');
+}
